@@ -80,7 +80,7 @@
             android:permission="scut.carson_ho.PROVIDER"
             android:exported="true"/>
 
-        <permission android:name="scut.carson_ho.Read" android:protectionLevel="normal"/>
+        <!--<permission android:name="scut.carson_ho.Read" android:protectionLevel="normal"/>-->
 
     </application>
 
