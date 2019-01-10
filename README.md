@@ -1,42 +1,42 @@
 # ProCamera
-ProCamera是一款基于Camera2 API的相机，实现了相机的常用功能，力求不断挖掘Camera2的巨大潜力，锻造一款在功能和设计上完美的相机产品。
+A ProCamera 茅 uma c芒mera baseada em API Camera2 que realiza as fun莽玫es comuns da c芒mera e se esfor莽a para aproveitar o enorme potencial da Camera2, forjando um produto de c芒mera que 茅 perfeito em fun莽茫o e design.
 ![camera2](https://github.com/18Gray/ProCamera/blob/master/screenshot/camera2.jpg)
 ![modeselect](https://github.com/18Gray/ProCamera/blob/master/screenshot/modeselect.jpg)
 
 
-## 功能
-1. 相机常用功能：自动对焦/测光，手动对焦/测光，前后摄像头切换，切换闪光灯模式，使用HDR，添加GPU滤镜，拍摄比例调节，延时摄影，录制视频。
-2. 图像处理相关：点击左下角按钮会进入相册，选取相册后可进行图像处理。包括：裁剪，滤镜，字幕，印记，对比度等的调节。
+## Fun莽茫o
+1. Fun莽玫es comuns da c芒mera: foco autom谩tico / medi莽茫o, foco manual / fotometria, comuta莽茫o frontal e traseira da c芒mera, comuta莽茫o do modo flash, uso de HDR, adi莽茫o de filtros GPU, ajuste de taxa de disparo, fotografia com lapso de tempo, grava莽茫o de v铆deo.
+2. Processamento de imagem relacionado: Clique no bot茫o no canto inferior esquerdo para inserir o 谩lbum e selecione o 谩lbum para processar a imagem. Incluindo: corte, filtros, legendas, impress玫es, contraste, etc.
 
-## 即将上线功能：
-1. 30fps高清连拍，实现焦点和测光点的手动分离，0延迟快门拍摄，raw格式的图片输出、调节awb/iso/ae。
-2. 针对人像拍摄，提供面部识别功能，识别成功后自动进行美颜。
-3. 设置界面相关功能：包括设置九宫格、图片数字签名（位置、时间、版权、字号、颜色）、水平校准、图片质量设置、拍摄视频质量设置、实时直方图、防手抖、
-4. 图像处理：会逐步向snapseed靠拢，并结合vsco、prisma这些有趣的应用进行改进。
-5. 如果图像中人像占用了大部分空间，将采用类似于美图的以美颜为主的图像处理。  
+## Em breve para entrar online:
+1. Disparo cont铆nuo a 30 fps HD, separa莽茫o manual da focagem e ponto de medi莽茫o, 0 disparo do disparador retardado, sa铆da da imagem formatada, ajuste awb / iso / ae.
+2. Para o disparo de retrato, a fun莽茫o de reconhecimento de rosto 茅 fornecida e a beleza 茅 executada automaticamente ap贸s o reconhecimento ser bem-sucedido.
+3. Definir fun莽玫es relacionadas 脿 interface: incluindo a configura莽茫o de nove quadrados, assinatura digital de imagem (posi莽茫o, tempo, direitos autorais, tamanho da fonte, cor), calibra莽茫o horizontal, configura莽茫o de qualidade de imagem, grava莽茫o de qualidade de v铆deo, histograma em tempo real,
+4. Processamento de imagem: Aproxime-se gradativamente dos snapseed e combine com aplica莽玫es interessantes como vsco e prisma.
+5. Se o retrato ocupar a maior parte do espa莽o na imagem, ele usar谩 um processamento de imagem orientado para a beleza, semelhante 脿 bela imagem.
 
-## 简单使用方法
-1. 在xml中引入Camera2TextureView这个控件。
-2. 在Activity或Fragment中，先设置一个mFile的路径用以保存图片地址。
-3. 在其onResume，调用cameraTextureView.openCamera()打开相机。
-4. 点击拍照按钮，调用cameraTextureView.takePicture()就完成了拍照。
-5. 在onPause中调用cameraTextureView.closeCamera()关闭相机。
+## Uso simples
+1. Introduzir o controle Camera2TextureView em xml.
+2. Na Atividade ou Fragmento, primeiro defina um caminho para mFile para salvar o endere莽o da imagem.
+3. Em seu onResume, chame cameraTextureView.openCamera () para abrir a c芒mera.
+4. Clique no bot茫o da c芒mera e ligue para cameraTextureView.takePicture () para completar a foto.
+5. Chame cameraTextureView.closeCamera () em onPause para desligar a c芒mera.
 
-## 复杂使用方法
-复杂使用方法实际是在上面简单使用方法基础上增加了调节闪光灯、前后摄像头切换、设置HDR、滤镜等功能。
-这里普遍采用的一个思路是：在onClick中点击按钮后，会弹出一个对话框Dialog或PopupWindow，然后再点击Dialog或PopupWindow上的选择项，之后消息会通过EventBus传到Camera2Fragment中，在Camera2Fragment中通过onXXX方法接收消息，再执行cameraTextureView.xxx方法执行相应相机操作。
-以闪光灯设置为例：
-1. 在onClick中弹出了PopupWindow。
-2. 选择PopWindow中四个选择项的一个，例如iv_flash_auto这个，是设置自动闪光，于是通过EventBus发送消息。
-3. 在Camera2Fragment中的onFlashSelect接收到消息，先进行一些UI的改动，然后cameraTextureView.setFlashMode来设置闪光灯模式。
+## Uso complexo
+O m茅todo de uso complicado 茅, na verdade, baseado no m茅todo de uso simples acima, para adicionar a fun莽茫o de ajustar o flash, a comuta莽茫o frontal e traseira da c芒mera, configurar HDR, filtrar e assim por diante.
+Uma id茅ia comumente usada aqui 茅: Depois de clicar no bot茫o no onClick, uma caixa de di谩logo Dialog ou PopupWindow ir谩 aparecer, e ent茫o a sele莽茫o em Dialog ou PopupWindow ser谩 clicada, ent茫o a mensagem ser谩 passada para Camera2Fragment atrav茅s de EventBus e passada em XXX em Camera2Fragment. O m茅todo recebe a mensagem e, em seguida, executa o m茅todo cameraTextureView.xxx para executar a opera莽茫o da c芒mera correspondente.
+Tome a configura莽茫o do flash como um exemplo:
+1. PopupWindow aparece no onClick.
+2. Selecione uma das quatro op莽玫es no PopWindow, por exemplo iv_flash_auto, para definir o flash autom谩tico, para enviar uma mensagem via EventBus.
+3. O onFlashSelect no Camera2Fragment recebe a mensagem, primeiro faz algumas altera莽玫es na interface do usu谩rio e, em seguida, cameraTextureView.setFlashMode para definir o modo de flash.
 
-## Gradle导入
-
-
-## Proguard混淆
+## Importa莽茫o Gradle
 
 
-## 其他问题
+## Confus茫o de Proguard
+
+
+## Outros problemas
 
 
 
