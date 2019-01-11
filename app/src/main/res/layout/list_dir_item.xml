@@ -10,7 +10,7 @@
         android:id="@+id/iv_image_item_dirlist"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
         android:background="@mipmap/folder_grey_24dp"
         android:paddingBottom="17dp"
@@ -24,15 +24,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@id/iv_image_item_dirlist"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/iv_image_item_dirlist"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/tv_name_item_dirlist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="所有图片"
+            android:text="@string/s8"
             android:textColor="@color/primary_text"
             android:textSize="14sp"
         />
@@ -42,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
-            tools:text="4723张"
+            tools:text="4723"
             android:textColor="@color/primary_text"
             android:textSize="12sp"/>
 
@@ -52,9 +52,9 @@
         android:id="@+id/iv_choosen_item_dirlist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
         android:src="@mipmap/done_black_24dp"/>
 
 </RelativeLayout>

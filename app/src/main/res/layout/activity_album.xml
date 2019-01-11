@@ -26,8 +26,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="20dp"
-            android:text="图片和视频"
+            android:layout_marginStart="20dp"
+            android:text="@string/s1"
             android:textColor="@color/text"
             android:textSize="16sp"
         />
@@ -35,7 +35,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/tv_select_album"
+            android:layout_toEndOf="@id/tv_select_album"
             android:layout_centerVertical="true"
             android:src="@mipmap/triangle_white_24dp"
         />

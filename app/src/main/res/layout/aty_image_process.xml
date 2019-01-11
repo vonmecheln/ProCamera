@@ -31,8 +31,8 @@
             android:paddingTop="6dp"
             android:paddingBottom="6dp"
             android:textColor="@color/primary_text"
-            android:textSize="16dp"
-            android:text="滤镜"
+            android:textSize="16sp"
+            android:text="@string/s4"
             />
 
         <TextView
@@ -45,8 +45,8 @@
             android:paddingTop="6dp"
             android:paddingBottom="6dp"
             android:textColor="@color/primary_text"
-            android:textSize="16dp"
-            android:text="工具"
+            android:textSize="16sp"
+            android:text="@string/s5"
             />
 
         <TextView
@@ -59,8 +59,8 @@
             android:paddingTop="6dp"
             android:paddingBottom="6dp"
             android:textColor="@color/primary_text"
-            android:textSize="16dp"
-            android:text="导出"
+            android:textSize="16sp"
+            android:text="@string/s6"
             />
 
     </LinearLayout>

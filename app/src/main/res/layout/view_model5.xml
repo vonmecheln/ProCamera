@@ -17,7 +17,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
             tools:src="@drawable/albumset_preselected"
             />
 
@@ -25,22 +25,22 @@
             android:id="@+id/tv_view_model5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/iv_icon_model5"
-            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@id/iv_icon_model5"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textColor="@color/primary_text"
-            tools:text="图像质量"
+            tools:text="@string/s12"
             />
 
         <com.rey.material.widget.Spinner
             android:id="@+id/spinner_viewmodel5"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_toRightOf="@id/tv_view_model5"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@id/tv_view_model5"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
             android:minWidth="128dp"
             android:padding="8dp"
             android:gravity="center"

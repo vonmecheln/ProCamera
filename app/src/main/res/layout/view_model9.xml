@@ -17,17 +17,17 @@
         android:id="@+id/tv_title_viewmodel9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/iv_icon_viewmodel9"
-        tools:text="调整"
+        android:layout_toEndOf="@id/iv_icon_viewmodel9"
+        tools:text="@string/s14"
         />
 
     <TextView
         android:id="@+id/tv_content_viewmodel9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/iv_icon_viewmodel9"
+        android:layout_toEndOf="@id/iv_icon_viewmodel9"
         android:layout_below="@id/tv_title_viewmodel9"
-        tools:text="调整"
+        tools:text="@string/s14"
         />
 
 </RelativeLayout>

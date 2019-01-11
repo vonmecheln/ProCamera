@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">Título</string>
+    <string name="s1">Fotos e vídeos</string>
+    <string name="action_settings">Definições</string>
+    <string name="s2">Seleção de modo</string>
+    <string name="s3">Determinar</string>
+    <string name="s4">Filtro</string>
+    <string name="s5">Ferramenta</string>
+    <string name="s6">Exportação</string>
+    <string name="s7">Seu nome de copyright</string>
+    <string name="s8">Todas as fotos</string>
+    <string name="s9">saturação</string>
+    <string name="s10">Contraste</string>
+    <string name="s11">Brilho</string>
+    <string name="s12">Qualidade da imagem</string>
+    <string name="s13">Data de assinatura</string>
+    <string name="s14">Ajuste</string>
+    <string name="s15">Meu álbum</string>
+    <string name="s16">Álbum de fotos em nuvem</string>
+</resources>

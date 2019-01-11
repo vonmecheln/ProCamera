@@ -20,7 +20,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="6dp"
         android:layout_below="@id/iv_icon_viewmodel8"
-        tools:text="调整"
+        tools:text="@string/s14"
         />
 
 

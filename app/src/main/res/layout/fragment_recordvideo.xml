@@ -70,7 +70,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:padding="10dp"
-                    android:text="模式选择"
+                    android:text="@string/s2"
                     android:textColor="@color/text"
                     android:textSize="14sp"
                     />

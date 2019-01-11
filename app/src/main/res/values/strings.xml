@@ -1,4 +1,21 @@
 <resources>
-    <string name="app_name">ProCamera</string>
+    <string name="app_name" translatable="false">ProCamera</string>
     <string name="action_settings">Settings</string>
+    <string name="title">Title</string>
+    <string name="s1">Pictures and videos</string>
+    <string name="s2">Mode selection</string>
+    <string name="s3">Determine</string>
+    <string name="s4">Filter</string>
+    <string name="s5">Tool</string>
+    <string name="s6">Export</string>
+    <string name="s7">Your copyright name</string>
+    <string name="s8">All pictures</string>
+    <string name="s9">saturation</string>
+    <string name="s10">Contrast</string>
+    <string name="s11">Brightness</string>
+    <string name="s12">Image Quality</string>
+    <string name="s13">Signature date</string>
+    <string name="s14">Adjustment</string>
+    <string name="s15">my album</string>
+    <string name="s16">Cloud photo album</string>
 </resources>

@@ -65,7 +65,7 @@
             <ImageView
                 android:layout_width="17dp"
                 android:layout_height="17dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:src="@mipmap/brightness_white_24dp" />
 
             <TextView
@@ -73,8 +73,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginLeft="5dp"
-                android:text="饱和度"
+                android:layout_marginStart="5dp"
+                android:text="@string/s9"
                 android:textColor="@color/text"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -97,16 +97,16 @@
             <ImageView
                 android:layout_width="17dp"
                 android:layout_height="17dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:src="@mipmap/tonality_white_24dp" />
             
             <TextView
                 android:id="@+id/tv_duibidu_strength"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:gravity="center"
-                android:text="对比度"
+                android:text="@string/s10"
                 android:textColor="@color/text"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -129,7 +129,7 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:src="@mipmap/brightness_white_24dp" />
             
             
@@ -137,9 +137,9 @@
                 android:id="@+id/tv_liangdu_strength"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:gravity="center"
-                android:text="亮	 度"
+                android:text="@string/s11"
                 android:textColor="@color/text"
                 android:textSize="14sp" />
             
